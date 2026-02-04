@@ -14,7 +14,12 @@ export default function Login() {
     // mas aqui vamos focar no login simples (via link ou senha se configurado).
     // Para simplificar agora, usaremos o "Magic Link" (link de acesso por email)
     // pois não requer configurar senhas complexas agora.
-    const { error } = await supabase.auth.signInWithOtp({ email })
+    const { error } = await supabase.auth.signInWithOtp({ 
+      email,
+      options: {
+      emailRedirectTo: window.location.origin // <-- Isso detecta a URL atual automaticamente
+      }
+    })
 
     if (error) {
       setMessage('Erro: ' + error.error_description || error.message)
