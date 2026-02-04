@@ -236,3 +236,5 @@ export default function SchoolDashboard({ session }) {
 const tabStyle = { padding: '10px 20px', background: 'none', border: 'none', cursor: 'pointer', fontSize: '16px', color: '#555' }
 const inputStyle = { width: '100%', padding: '8px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }
 const btnPrimary = { background: '#1890ff', color: 'white', border: 'none', padding: '10px', borderRadius: '4px', cursor: 'pointer' }
+
+// Atualização forçada da tela de escolha

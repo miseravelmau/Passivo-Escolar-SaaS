@@ -140,3 +140,5 @@ const cardStyle = {
 }
 
 const btnBack = { background: 'none', border: '1px solid #ccc', padding: '5px 10px', borderRadius: '4px', cursor: 'pointer' }
+
+// Atualização forçada da tela de escolha
